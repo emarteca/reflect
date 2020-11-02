@@ -1,0 +1,3 @@
+ 10. Do not reflect equal / previous reflected files
+" 12. Reflect apparently equal files: same name and content, different modification time"
+ 13. Reflect apparently equal files: same name but different content

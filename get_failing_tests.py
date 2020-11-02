@@ -31,7 +31,7 @@ def main():
 	new_root = "/home/ellen/Documents/ASJProj/TESTING_reordering/reflect/"
 	failing_suites = process_fails_file( "fails.csv")
 	print_DF_to_file( failing_suites.apply(lambda row: new_root + row.suite, axis=1), "test_list.txt")
-	failing_tests = get_failing_tests("junit.xml")
+	failing_tests = get_failing_tests("junit-unit-tests.xml")
 	print_DF_to_file(pd.DataFrame(failing_tests).drop_duplicates(), "affected_test_descs.txt")
 
 main()
